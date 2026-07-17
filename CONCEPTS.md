@@ -1,13 +1,5 @@
 # CONCEPTS — "Silent Summit" Luxury Hoodie Showcase
 
-**Created:** 2026-07-17
-
----
-
-## Creative Brief
-
-A single male model reveals a luxury hoodie in a misty pine forest. Moody, cinematic, and dramatic — the forest itself becomes a character. The hoodie is the hero. Every frame sells premium craftsmanship.
-
 **Tagline:** *"Worn by silence. Made for the summit."*
 
 ---
@@ -49,6 +41,13 @@ A single male model reveals a luxury hoodie in a misty pine forest. Moody, cinem
 - **Expression:** Confident, subtle, mysterious — minimal emotion, maximum presence
 - **Hair:** Short or styled, natural
 - **Action:** Dramatic reveal — walking through mist, stopping, turning to camera, hood adjustment, final power pose
+
+### Hoodie Design Specs
+- **Fit:** Oversized, drop shoulder
+- **Fabric:** Heavyweight cotton (350+ GSM)
+- **Features:** Kangaroo pocket, ribbed cuffs/hem, metal zipper (optional), drawstring hood
+- **Color:** Charcoal/dark grey (primary), with subtle texture variation
+- **Branding:** Minimal — small embossed logo on chest or sleeve (if any)
 
 ---
 
@@ -93,7 +92,7 @@ A single male model reveals a luxury hoodie in a misty pine forest. Moody, cinem
 
 ---
 
-## Narrative Arc (25 seconds)
+## Narrative Arc
 
 ```
 [0-5s]   MYSTERY     — Fog, forest, distant figure approaching
@@ -105,19 +104,6 @@ A single male model reveals a luxury hoodie in a misty pine forest. Moody, cinem
 
 ---
 
-## Technical Specs
-
-| Spec | Value |
-|------|-------|
-| Resolution | 1080×1920 (9:16 portrait) |
-| Frame Rate | 30 fps |
-| Duration | 25 seconds (750 frames) |
-| Render Engine | Blender Cycles (HIP ROCm) |
-| GPU | AMD Radeon RX 6800 XT (16 GB VRAM) |
-| Output | PNG sequence → H.264 MP4 |
-
----
-
 ## Differentiation from Previous Project
 
 | Aspect | Previous (Beach) | New (Forest Hoodie) |
@@ -126,33 +112,21 @@ A single male model reveals a luxury hoodie in a misty pine forest. Moody, cinem
 | Environment | Open beach | Dense pine forest |
 | Lighting | Bright golden hour | Moody low-key |
 | Mood | Fashion show, confident | Dramatic reveal, mysterious |
-| Pipeline | Blender + ComfyUI SDXL | Blender only (no external apps) |
+| Pipeline | Blender + ComfyUI SDXL | Blender only |
 | Duration | 26.7s (800f) | 25s (750f) |
 | Product | Bikini/swimwear | Luxury hoodie |
 
 ---
----
 
-# SHOOT LIST — "Silent Summit" Luxury Hoodie Reveal
+# SHOOT LIST
 
-**Total:** 750 frames (25s @ 30fps) — 8 camera cuts.
-
----
-
-## Production Metadata
-- **Aspect Ratio:** 9:16 Portrait (1080 × 1920)
-- **Frame Rate:** 30 fps
-- **Total Duration:** 25 seconds (750 frames)
-- **Format:** Luxury hoodie dramatic reveal — premium fashion film
-- **Camera Style:** Cinematic — mix of wide atmospheric and tight detail shots
-- **Main Environment:** Misty pine forest — moody, dramatic
+**8 camera cuts, 750 frames (25s @ 30fps)**
 
 ---
 
-## Camera Naming Convention
+## Camera Naming
 
-Each shot uses a dedicated camera: `CAM_S01` through `CAM_S08`.
-All cameras use vertical sensor fit and linear camera dolly keyframes.
+`CAM_S01` through `CAM_S08` — vertical sensor fit, linear keyframes.
 
 ---
 
@@ -163,166 +137,131 @@ All cameras use vertical sensor fit and linear camera dolly keyframes.
 | Field | Value |
 |:------|:------|
 | **Camera** | `CAM_S01` |
-| **Frames** | `001–100` (100f) |
-| **Time** | 0.0–3.3s |
-| **Type** | Extreme Wide Shot (EWS) |
+| **Frames** | `001–100` (100f / 3.3s) |
+| **Type** | EWS |
 | **Lens** | **18mm** — Panoramic |
-| **Framing** | Dense pine forest corridor, thick fog rolling through tree trunks, distant silhouetted figure barely visible deep in the mist — mystery |
-| **Camera** | Slow push-in dolly through the fog corridor toward the distant figure |
-| **Movement** | Steady forward dolly — 2.5m travel |
-| **Focus** | Deep DOF (F/8) — fog does the softening naturally |
-| **Vibe** | **MYSTERY** — who is out there? atmospheric dread |
+| **Framing** | Dense pine forest corridor, thick fog, distant silhouetted figure barely visible |
+| **Movement** | Slow push-in dolly — 2.5m travel |
+| **Focus** | Deep DOF (F/8) |
+| **Vibe** | **MYSTERY** — atmospheric dread |
 
 ### S02 — Full Body Walk (Approach Through Mist)
 
 | Field | Value |
 |:------|:------|
 | **Camera** | `CAM_S02` |
-| **Frames** | `101–220` (120f) |
-| **Time** | 3.3–7.3s |
-| **Type** | Full Body Shot (FULL) |
+| **Frames** | `101–220` (120f / 4.0s) |
+| **Type** | FULL |
 | **Lens** | **35mm** — Slightly wide |
-| **Framing** | `male_1` full body walking toward camera through fog, hoodie partially zipped, hands in pockets, pine trees flanking the path |
-| **Camera** | Lateral tracking dolly matching walk speed, slight parallax on foreground trees |
-| **Movement** | Right-to-left lateral tracking — trees pass in foreground for depth |
-| **Focus** | Mid DOF (F/4.0) — model sharp, foreground trees soft |
-| **Vibe** | **APPROACH** — confident, unhurried, premium presence |
+| **Framing** | `male_1` full body walking toward camera, hoodie partially zipped, hands in pockets |
+| **Movement** | Lateral tracking dolly — trees pass in foreground for parallax |
+| **Focus** | Mid DOF (F/4.0) |
+| **Vibe** | **APPROACH** — confident, unhurried |
 
 ### S03 — Medium Shot (Torso Reveal)
 
 | Field | Value |
 |:------|:------|
 | **Camera** | `CAM_S03` |
-| **Frames** | `221–320` (100f) |
-| **Time** | 7.3–10.7s |
-| **Type** | Medium Shot (MED) |
+| **Frames** | `221–320` (100f / 3.3s) |
+| **Type** | MED |
 | **Lens** | **50mm** — Portrait standard |
-| **Framing** | `male_1` waist-up, stops walking, slight turn toward camera. Fog swirls around him. Hoodie front fully visible — heavyweight fabric, oversized fit |
-| **Camera** | Slow push-in dolly from front-right angle, closing distance as he stops |
+| **Framing** | `male_1` waist-up, stops walking, slight turn. Hoodie front fully visible |
 | **Movement** | Forward dolly + subtle tilt up to eye level |
-| **Focus** | Mid-shallow DOF (F/2.8) — model sharp, background soft |
-| **Vibe** | **TRANSITION** — from approach to reveal, tension building |
+| **Focus** | Mid-shallow DOF (F/2.8) |
+| **Vibe** | **TRANSITION** — tension building |
 
 ### S04 — Hood Adjustment (Hero Reveal Moment)
 
 | Field | Value |
 |:------|:------|
 | **Camera** | `CAM_S04` |
-| **Frames** | `321–420` (100f) |
-| **Time** | 10.7–14.0s |
-| **Type** | Medium Close-Up (MCU) — Hero Shot |
+| **Frames** | `321–420` (100f / 3.3s) |
+| **Type** | MCU — Hero Shot |
 | **Lens** | **85mm** — Portrait cinematic |
-| **Framing** | `male_1` chest-up, reaching up to adjust/raise hood. Key light catches fabric edge. Eyes visible under hood shadow. **THIS IS THE HERO FRAME** |
-| **Camera** | Low-angle slight tilt up — power pose. Slow dolly push-in |
-| **Movement** | Forward dolly + low-angle crane rise — model dominates frame |
-| **Focus** | Shallow DOF (F/1.8) — eyes + hood sharp, forest melts away |
-| **Vibe** | **REVEAL** — product hero moment, dramatic, iconic |
+| **Framing** | `male_1` chest-up, reaching to adjust hood. Key light catches fabric. Eyes under hood shadow. **HERO FRAME** |
+| **Movement** | Forward dolly + low-angle crane rise |
+| **Focus** | Shallow DOF (F/1.8) |
+| **Vibe** | **REVEAL** — product hero, dramatic, iconic |
 
 ### S05 — Close-Up Detail (Fabric & Stitching)
 
 | Field | Value |
 |:------|:------|
 | **Camera** | `CAM_S05` |
-| **Frames** | `421–510` (90f) |
-| **Time** | 14.0–17.0s |
-| **Type** | Close-Up (CU) — Product Detail |
-| **Lens** | **100mm** — Macro detail |
-| **Framing** | Tight on hoodie fabric: heavyweight cotton weave, drawstring detail, hood seam, kangaroo pocket edge. Fingers grazing fabric |
-| **Camera** | Slow tracking pan across fabric surface, left to right |
-| **Movement** | Lateral pan — 15cm travel across the chest area |
-| **Focus** | Very shallow DOF (F/1.4) — single plane sharp, everything else bokeh |
-| **Vibe** | **CRAFTSMANSHIP** — texture, quality, premium material |
+| **Frames** | `421–510` (90f / 3.0s) |
+| **Type** | CU — Product Detail |
+| **Lens** | **100mm** — Macro |
+| **Framing** | Tight on hoodie fabric: cotton weave, drawstring, hood seam, kangaroo pocket |
+| **Movement** | Lateral pan — 15cm across chest |
+| **Focus** | Very shallow DOF (F/1.4) |
+| **Vibe** | **CRAFTSMANSHIP** — texture, quality |
 
 ### S06 — Detail Shot (Zipper & Cuff)
 
 | Field | Value |
 |:------|:------|
 | **Camera** | `CAM_S06` |
-| **Frames** | `511–590` (80f) |
-| **Time** | 17.0–19.7s |
-| **Type** | Detail (DET) — Macro |
+| **Frames** | `511–590` (80f / 2.7s) |
+| **Type** | DET — Macro |
 | **Lens** | **105mm** — Macro |
-| **Framing** | Zipper pull close-up → hand zipping up → cut to cuff ribbing detail at wrist |
-| **Camera** | Static with rack focus — zipper → cuff transition |
-| **Movement** | Minimal — rack focus pull between two detail points |
-| **Focus** | Very shallow DOF (F/1.4) — selective focus pull |
-| **Vibe** | **DETAIL** — hardware, precision, luxury finishing |
+| **Framing** | Zipper pull close-up → hand zipping → cuff ribbing at wrist |
+| **Movement** | Rack focus pull between two detail points |
+| **Focus** | Very shallow DOF (F/1.4) |
+| **Vibe** | **DETAIL** — hardware, precision |
 
 ### S07 — Full Body Power Pose (Final Stance)
 
 | Field | Value |
 |:------|:------|
 | **Camera** | `CAM_S07` |
-| **Frames** | `591–670` (80f) |
-| **Time** | 19.7–22.3s |
-| **Type** | Full Body Shot (FULL) — Power |
+| **Frames** | `591–670` (80f / 2.7s) |
+| **Type** | FULL — Power |
 | **Lens** | **28mm** — Wide cinematic |
-| **Framing** | `male_1` full body, standing tall in fog, hood up, hands at sides. Pine trees framing him on both sides. Ground mist at feet |
-| **Camera** | Low-angle static — model towers, slight upward tilt |
-| **Movement** | Static with subtle breathing drift (handheld feel) |
-| **Focus** | Mid DOF (F/2.8) — model sharp, background atmospheric |
-| **Vibe** | **POWER** — dominant, premium, confident final stance |
+| **Framing** | `male_1` full body, hood up, hands at sides. Trees framing. Ground mist at feet |
+| **Movement** | Static with subtle breathing drift |
+| **Focus** | Mid DOF (F/2.8) |
+| **Vibe** | **POWER** — dominant, confident |
 
 ### S08 — Extreme Wide Fade Out (Forest Silhouette)
 
 | Field | Value |
 |:------|:------|
 | **Camera** | `CAM_S08` |
-| **Frames** | `671–750` (80f) |
-| **Time** | 22.3–25.0s |
-| **Type** | Extreme Wide Shot (EWS) — Finale |
+| **Frames** | `671–750` (80f / 2.7s) |
+| **Type** | EWS — Finale |
 | **Lens** | **24mm** — Wide panoramic |
-| **Framing** | `male_1` silhouetted figure in center of forest corridor, fog engulfing, light fading — iconic final image |
-| **Camera** | Slow dolly out — widening the frame, model becomes small in the vast forest |
-| **Movement** | Backward dolly + slight crane rise — retreat into the mist |
-| **Focus** | Deep DOF (F/8) — atmospheric |
-| **Vibe** | **FADE** — mysterious, memorable, iconic exit |
+| **Framing** | `male_1` silhouetted in forest corridor, fog engulfing, light fading |
+| **Movement** | Backward dolly + crane rise — retreat into mist |
+| **Focus** | Deep DOF (F/8) |
+| **Vibe** | **FADE** — mysterious, iconic exit |
 
 ---
 
-## Frame Distribution Summary
+## Frame Distribution
 
 | Shot | Camera | Type | Frames | Duration |
 |:-----|:-------|:-----|:-------|:---------|
-| S01 | CAM_S01 | EWS Establishing | 001–100 | 3.3s |
-| S02 | CAM_S02 | FULL Walk | 101–220 | 4.0s |
-| S03 | CAM_S03 | MED Torso | 221–320 | 3.3s |
-| S04 | CAM_S04 | MCU Hero Reveal | 321–420 | 3.3s |
-| S05 | CAM_S05 | CU Fabric Detail | 421–510 | 3.0s |
-| S06 | CAM_S06 | DET Zipper/Cuff | 511–590 | 2.7s |
-| S07 | CAM_S07 | FULL Power Pose | 591–670 | 2.7s |
-| S08 | CAM_S08 | EWS Fade Out | 671–750 | 2.7s |
+| S01 | CAM_S01 | EWS | 001–100 | 3.3s |
+| S02 | CAM_S02 | FULL | 101–220 | 4.0s |
+| S03 | CAM_S03 | MED | 221–320 | 3.3s |
+| S04 | CAM_S04 | MCU | 321–420 | 3.3s |
+| S05 | CAM_S05 | CU | 421–510 | 3.0s |
+| S06 | CAM_S06 | DET | 511–590 | 2.7s |
+| S07 | CAM_S07 | FULL | 591–670 | 2.7s |
+| S08 | CAM_S08 | EWS | 671–750 | 2.7s |
 
 ---
 
-## Character Screen Time
-
-| Character | Total Frames | Percentage | Shots Featured |
-|:----------|:-------------|:-----------|:---------------|
-| `male_1` | 750f | 100% | S01–S08 (all shots) |
-
----
-
-## Narrative Beat Map
+## Beat Map
 
 ```
-[0-3.3s]   S01  MYSTERY    — Fog, forest, distant figure
-[3.3-7.3s] S02  APPROACH   — Walking through mist
-[7.3-10.7s] S03 TRANSITION — Stops, turns, hoodie visible
-[10.7-14s] S04  REVEAL     — Hood adjustment — HERO MOMENT
-[14-17s]   S05  DETAIL     — Fabric texture showcase
-[17-19.7s] S06  CRAFT      — Zipper, cuff, hardware
-[19.7-22.3s] S07 POWER    — Final power stance
-[22.3-25s] S08  FADE       — Silhouette in mist — end
+[0-3.3s]    S01  MYSTERY    — Fog, forest, distant figure
+[3.3-7.3s]  S02  APPROACH   — Walking through mist
+[7.3-10.7s] S03  TRANSITION — Stops, turns, hoodie visible
+[10.7-14s]  S04  REVEAL     — Hood adjustment — HERO MOMENT
+[14-17s]    S05  DETAIL     — Fabric texture showcase
+[17-19.7s]  S06  CRAFT      — Zipper, cuff, hardware
+[19.7-22.3s] S07 POWER     — Final power stance
+[22.3-25s]  S08  FADE       — Silhouette in mist — end
 ```
-
----
-
-## Camera Technical Notes
-
-- **Sensor:** Full frame 36×24mm, sensor fit = VERTICAL (for 9:16 portrait)
-- **Forest atmosphere:** Volumetric fog in all shots — thick at ground level, thinner at canopy
-- **Lighting:** Low-key throughout — single dramatic key light shifts position per shot
-- **Color grade:** Desaturated greens, cool shadows, warm skin tones preserved
-- **All cameras use Track-To constraints** pointing at TARGET_* empties
-- Camera animation keyframed with LINEAR interpolation by default
