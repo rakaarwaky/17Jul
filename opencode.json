@@ -1,0 +1,13 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "blender-arwaky": {
+      "type": "local",
+      "command": ["uv", "--directory", "/home/raka/Animation/17Jul/blender-arwaky", "run", "blender-arwaky"],
+      "environment": {
+        "BLENDERMCP_CONFIG_PATH": "/home/raka/Animation/17Jul/blender-arwaky/config.yaml"
+      },
+      "enabled": true
+    }
+  }
+}
