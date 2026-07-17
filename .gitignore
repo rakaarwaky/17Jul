@@ -38,3 +38,6 @@ __pycache__/
 *.swp
 *.swo
 *~
+
+# Asset
+mpfb2_assets/
