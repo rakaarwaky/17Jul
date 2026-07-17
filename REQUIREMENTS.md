@@ -129,12 +129,18 @@ bpy.ops.simply_cloth.paint_to_cloth()
 
 | Plugin | Status | Prioritas |
 |--------|--------|-----------|
-| MPFB2 | Ready to install | Tinggi |
+| MPFB2 | ✅ Installed & Enabled | Tinggi |
 | Simply Cloth | Perlu dibeli | Tinggi |
 
 ## Catatan
 
-1. MPFB2 gratis dan bisa langsung diinstall
-2. Simply Cloth berbayar, perlu purchase dulu
-3. Kedua plugin kompatibel dengan Blender 4.x
+1. MPFB2 sudah terinstall dan enabled di Blender 5.2
+2. Simply Cloth berbayar, perlu purchase dulu di Blender Market
+3. Kedua plugin kompatibel dengan Blender 5.x
 4. Keduanya bisa dikontrol via MCP blender-arwaky
+
+### Instalasi MPFB2 (Blender 5.2)
+- **Status:** Berhasil diinstall dan enabled
+- **Lokasi:** `/home/raka/.config/blender/5.2/scripts/addons/mpfb/`
+- **Patch:** locationservice.py sudah di-patch untuk kompatibilitas Blender 5.2
+- **Akses:** View3D > Properties > MPFB
