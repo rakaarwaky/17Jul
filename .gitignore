@@ -1,0 +1,40 @@
+# Photoshop
+*.psd
+
+# MCP Symlink
+blender-arwaky
+
+# Blender
+*.blend
+*.blend1
+*.blend2
+*.blend3
+*.bak
+
+# Render output
+renders/frames/
+renders/final/
+
+# Cache
+*.abc
+*.fbx
+*.mdd
+*.pc2
+*.bvh
+*.dds
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+
+# Temporary
+*.tmp
+*.swp
+*.swo
+*~
