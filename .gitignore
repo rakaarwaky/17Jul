@@ -42,3 +42,7 @@ __pycache__/
 # Asset
 mpfb2_assets/
 plugin/
+
+
+#Ignore vscode AI rules
+.github/instructions/codacy.instructions.md
